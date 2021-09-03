@@ -60,24 +60,30 @@ h1, h2, h3, h4, h5 {
     font-size: 18px;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
+    font-weight: 500; /*spec text looks 500 weight*/
 }
 
 p {
     line-height: 1.4;
+    font-weight: 500; /*spec text looks 500 weight*/
 }
 
+/* header to hold logo and nav */
 header{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-bottom: 1%;
+    margin-top: 1%;
+    margin-bottom: 2%;
 }
+
 
 .logo{
     width: 30%;
     padding: 1%;
 }
 
+/* navigation contaier */
 .nav{
     width: 70%;
     display: flex;
@@ -87,25 +93,19 @@ header{
     padding-top: 2%;
 }
 
+/* style nav links */
 .nav a {
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 3% 1%;
     text-decoration: none;
-    font-size: 17px;
   }
 
+/* jumbo image as bg of empty div */
 .jumboImg{
     width: 100%;
     min-height: 15vh;
     background-image: url("/img/jumbo.jpg");
-    margin: 1%;
-}
-
-.aboutJumboImg{
-    width: 85%;
-    min-height: 15vh;
-    background-image: url("/img/jumbo-about.png");
     margin: 1%;
 }
 
@@ -155,6 +155,7 @@ header{
     justify-content: center;
 }
 
+/* coloring the boxes by id */
 #box1{
     background-color: teal;
 }
@@ -226,4 +227,74 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* jumbo image as bg of empty div */
+.aboutJumboImg{
+    width: 100%;
+    min-height: 15vh;
+    background-image: url("/img/jumbo-about.png");
+    margin: 1%;
+}
+/* helper class to easier center content */
+.about-top-helper{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px dashed black;
+    margin-bottom: 3%;
+}
+
+.about-top-content{
+    width: 95%;
+    padding: 1%;
+}
+
+/* class for arranging the tiles */
+.about-middle-content{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-evenly;
+    margin-bottom: 3%;
+}
+
+/* tiles for middle content */
+.aboutTile{
+
+    width: 45%;
+    border-bottom: 1px dashed black;
+    margin-top: 1%;
+    padding-bottom: 3%;
+    margin-bottom: 5%;
+}
+
+/* buttons in tiles */
+.aboutTile a{
+    background: white;
+    border: 2px solid black;
+    padding: 2% 6%;
+    text-align: center;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.aboutTile h2{
+    margin-top: 2%;
+}
+
+.aboutTile p{
+    margin-bottom: 8%;
+}
+
+/* class to help center bottom content */
+.about-bottom-helper{
+    display: flex;
+    justify-content: center;
+}
+.about-bottom-content{
+    width: 95%;
+    padding: 1%;
+    margin-bottom: 4%;
 }
