@@ -66,6 +66,49 @@ p {
     line-height: 1.4;
 }
 
+header{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 1%;
+}
+
+.logo{
+    width: 30%;
+    padding: 1%;
+}
+
+.nav{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1%;
+    padding-top: 2%;
+}
+
+.nav a {
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+.jumboImg{
+    width: 100%;
+    min-height: 15vh;
+    background-image: url("/img/jumbo.jpg");
+    margin: 1%;
+}
+
+.aboutJumboImg{
+    width: 85%;
+    min-height: 15vh;
+    background-image: url("/img/jumbo-about.png");
+    margin: 1%;
+}
+
 .container {
     width: 800px;
     margin: 0 auto;
@@ -110,6 +153,46 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#box1{
+    background-color: teal;
+}
+
+#box2{
+    background-color: gold;
+}
+
+#box3{
+    background-color: cadetblue;
+}
+
+#box4{
+    background-color: coral;
+}
+
+#box5{
+    background-color: crimson;
+}
+
+#box6{
+    background-color: forestgreen;
+}
+
+#box7{
+    background-color: darkorchid;
+}
+
+#box8{
+    background-color: hotpink;
+}
+
+#box9{
+    background-color: indigo;
+}
+
+#box10{
+    background-color: dodgerblue;
 }
 
 .bottom-content {
